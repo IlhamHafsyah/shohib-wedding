@@ -1,0 +1,33 @@
+.btn-brown {
+    background: #2c0500!important;
+    color: #fff!important;
+    transition: all .3s ease-out;
+
+    &:hover {
+        background: darken(#2c0500, 10%)!important;
+    }
+}
+
+.alert-wedding{
+    background: #2c0500;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.3);
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    display: table;
+    color: #fff;
+    transform: translateY(200px);
+    transition: transform 0.3s ease-out;
+    @media (max-width: 688px) {
+      bottom: 100px;
+    }
+}
+
+.show-alert{
+    transform: translateY(0);
+}
